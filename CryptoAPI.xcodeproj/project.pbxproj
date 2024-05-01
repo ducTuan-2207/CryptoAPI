@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		22729B4D2BE29EE500FEA9A9 /* CryptoAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22729B4C2BE29EE500FEA9A9 /* CryptoAPIApp.swift */; };
 		22729B4F2BE29EE500FEA9A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22729B4E2BE29EE500FEA9A9 /* ContentView.swift */; };
-		22729B512BE29EE800FEA9A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22729B502BE29EE800FEA9A9 /* Assets.xcassets */; };
 		22729B542BE29EE800FEA9A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22729B532BE29EE800FEA9A9 /* Preview Assets.xcassets */; };
+		22729B5B2BE2B97200FEA9A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22729B5A2BE2B97100FEA9A9 /* Assets.xcassets */; };
+		22729B5E2BE2B9F900FEA9A9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22729B5D2BE2B9F900FEA9A9 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22729B492BE29EE500FEA9A9 /* CryptoAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22729B4C2BE29EE500FEA9A9 /* CryptoAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAPIApp.swift; sourceTree = "<group>"; };
 		22729B4E2BE29EE500FEA9A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		22729B502BE29EE800FEA9A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22729B532BE29EE800FEA9A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22729B5A2BE2B97100FEA9A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		22729B5D2BE2B9F900FEA9A9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +53,10 @@
 		22729B4B2BE29EE500FEA9A9 /* CryptoAPI */ = {
 			isa = PBXGroup;
 			children = (
+				22729B5C2BE2B9D100FEA9A9 /* Extensions */,
 				22729B4C2BE29EE500FEA9A9 /* CryptoAPIApp.swift */,
 				22729B4E2BE29EE500FEA9A9 /* ContentView.swift */,
-				22729B502BE29EE800FEA9A9 /* Assets.xcassets */,
+				22729B5A2BE2B97100FEA9A9 /* Assets.xcassets */,
 				22729B522BE29EE800FEA9A9 /* Preview Content */,
 			);
 			path = CryptoAPI;
@@ -65,6 +68,14 @@
 				22729B532BE29EE800FEA9A9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22729B5C2BE2B9D100FEA9A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				22729B5D2BE2B9F900FEA9A9 /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22729B542BE29EE800FEA9A9 /* Preview Assets.xcassets in Resources */,
-				22729B512BE29EE800FEA9A9 /* Assets.xcassets in Resources */,
+				22729B5B2BE2B97200FEA9A9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +150,7 @@
 			files = (
 				22729B4F2BE29EE500FEA9A9 /* ContentView.swift in Sources */,
 				22729B4D2BE29EE500FEA9A9 /* CryptoAPIApp.swift in Sources */,
+				22729B5E2BE2B9F900FEA9A9 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +281,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoAPI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +310,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoAPI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
