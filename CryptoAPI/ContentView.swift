@@ -12,7 +12,7 @@ struct ContentView: View {
         ZStack {
             Color.theme.background
                 .ignoresSafeArea()
-            VStack {
+            VStack(spacing: 40) {
                 Text("Accent color")
                     .foregroundColor(Color.theme.accent)
                 Text("Secondar color")
@@ -21,6 +21,10 @@ struct ContentView: View {
                     .foregroundColor(Color.theme.red)
                 Text("Green color")
                     .foregroundColor(Color.theme.green)
+                
+                    .frame(maxWidth: .infinity)
+                
+                
             }
         }
     }
