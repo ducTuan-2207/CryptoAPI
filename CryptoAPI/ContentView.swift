@@ -22,7 +22,7 @@ struct ContentView: View {
                 Text("Green color")
                     .foregroundColor(Color.theme.green)
                 
-                    .frame(maxWidth: .infinity)
+                    
                 
                 
             }
