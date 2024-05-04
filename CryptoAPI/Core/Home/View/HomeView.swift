@@ -9,7 +9,18 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            //background layer
+            Color.theme.background
+                .ignoresSafeArea()
+            
+            //content layer
+            VStack {
+                Text("Header")
+                Spacer(minLength: 0)
+            }
+        }
+        
     }
 }
 
