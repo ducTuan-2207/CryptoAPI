@@ -84,6 +84,7 @@
 		2279F88D2BE6973900356589 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2279F8932BE6A87700356589 /* Components */,
 				2279F88E2BE6974B00356589 /* Home */,
 			);
 			path = Core;
@@ -111,6 +112,21 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2279F8932BE6A87700356589 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2279F8942BE6A89100356589 /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2279F8942BE6A89100356589 /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CircleButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
