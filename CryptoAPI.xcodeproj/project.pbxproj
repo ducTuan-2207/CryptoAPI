@@ -13,6 +13,7 @@
 		22729B5B2BE2B97200FEA9A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22729B5A2BE2B97100FEA9A9 /* Assets.xcassets */; };
 		22729B5E2BE2B9F900FEA9A9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22729B5D2BE2B9F900FEA9A9 /* Color.swift */; };
 		2279F8922BE6977800356589 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279F8912BE6977800356589 /* HomeView.swift */; };
+		2279F8962BE6A9E900356589 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279F8952BE6A9E900356589 /* CircleButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		22729B5A2BE2B97100FEA9A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		22729B5D2BE2B9F900FEA9A9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		2279F8912BE6977800356589 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2279F8952BE6A9E900356589 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		2279F8942BE6A89100356589 /* CircleButton */ = {
 			isa = PBXGroup;
 			children = (
+				2279F8952BE6A9E900356589 /* CircleButtonView.swift */,
 			);
 			path = CircleButton;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				22729B4F2BE29EE500FEA9A9 /* ContentView.swift in Sources */,
 				2279F8922BE6977800356589 /* HomeView.swift in Sources */,
 				22729B4D2BE29EE500FEA9A9 /* CryptoAPIApp.swift in Sources */,
+				2279F8962BE6A9E900356589 /* CircleButtonView.swift in Sources */,
 				22729B5E2BE2B9F900FEA9A9 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
