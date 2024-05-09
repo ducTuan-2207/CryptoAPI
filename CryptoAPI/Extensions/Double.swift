@@ -38,4 +38,25 @@ extension Double {
     func asPercentString() -> String {
         return asNumberString() + "%"
     }
+    private var currencyFormatter2: NumberFormatter {
+        let formatter = NumberFormatter()
+        // Thiết lập việc sử dụng phân cách nhóm.
+        formatter.usesGroupingSeparator = true
+        // Đặt kiểu số là kiểu tiền tệ.
+        formatter.numberStyle = .currency
+        // Đặt vùng địa lý cho định dạng số là vùng địa lý hiện tại của thiết bị.
+       // formatter.locale = .current
+        // Đặt mã tiền tệ là "usd".
+       // formatter.currencyCode = "usd"
+        // Đặt ký hiệu tiền tệ là "$".
+//formatter.currencySymbol = "$"
+        // Trả về đối tượng formatter đã được cấu hình.
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 2
+        return formatter
+    }
+    func asCurrencyWith2Decimals() -> String {
+        let number = NSNumber(value: self)
+        return currencyFormatter2.string(from: number) ?? "$0.00"
+    }
 }
