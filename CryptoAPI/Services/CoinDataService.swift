@@ -16,7 +16,7 @@ class CoinDataService {
         getCoin()
     }
     private func getCoin() {
-        guard let url = URL(string: "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1696501400") else {return}
+        guard let url = URL(string: "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=true&price_change_percentage=24h") else {return}
         
         // Đăng ký closure để xử lý hoàn thành và nhận giá trị từ publisher
         coinSubcription =  URLSession.shared.dataTaskPublisher(for: url)

@@ -22,11 +22,13 @@ class HomeViewModel: ObservableObject {
     init() {
         addSubcribers()
     }
+    // Trong hàm addSubcribers(), cập nhật cách xử lý dữ liệu nhận được từ CoinDataService
     func addSubcribers() {
         dataService.$allCoins
-            .sink { [weak self] (returnedCoins) in // thêm weak self để tránh tạo ra retain cycle.
+            .sink { [weak self] (returnedCoins) in
                 self?.allCoin = returnedCoins
             }
             .store(in: &cancellable)
     }
+
 }
