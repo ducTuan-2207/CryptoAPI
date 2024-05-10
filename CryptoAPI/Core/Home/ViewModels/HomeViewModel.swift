@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 class HomeViewModel: ObservableObject {
     
@@ -14,14 +15,18 @@ class HomeViewModel: ObservableObject {
     @Published var allCoin: [CoinModel] = []
     @Published var portfolioCoins: [CoinModel] = []
     
+    private let dataService = CoinDataService()
+    private var cancellable = Set<AnyCancellable>()
+    
     // Khởi tạo lớp.
     init() {
-        // Lên lịch thực hiện một khối mã sau 2 giây.
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            // Thêm một đối tượng coin vào mảng allCoin.
-            self.allCoin.append(DeveloperPreview.instance.coin)
-            // Thêm một đối tượng coin vào mảng portfolioCoins.
-            self.portfolioCoins.append(DeveloperPreview.instance.coin)
-        }
+        addSubcribers()
+    }
+    func addSubcribers() {
+        dataService.$allCoins
+            .sink { [weak self] (returnedCoins) in // thêm weak self để tránh tạo ra retain cycle.
+                self?.allCoin = returnedCoins
+            }
+            .store(in: &cancellable)
     }
 }
