@@ -33,7 +33,6 @@ struct HomeView: View {
                     portfolioCoinList
                         .transition(.move(edge: .leading))
                 }
-              
                 Spacer(minLength: 0)
             }
         }
