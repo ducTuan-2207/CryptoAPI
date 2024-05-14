@@ -21,6 +21,7 @@ class CoinImageService {
         
     }
     private func getCoinImage(){
+        print("Downloading image now")
         guard let url = URL(string: coin.image) else {return}
         
         // Đăng ký closure để xử lý hoàn thành và nhận giá trị từ publisher
