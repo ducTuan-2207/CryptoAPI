@@ -14,6 +14,8 @@ class HomeViewModel: ObservableObject {
     // có tác dụng tự động thông báo cho các view khi giá trị thay đổi.
     @Published var allCoin: [CoinModel] = []
     @Published var portfolioCoins: [CoinModel] = []
+    @Published var searchText: String = ""
+    
     
     private let dataService = CoinDataService()
     private var cancellable = Set<AnyCancellable>()
