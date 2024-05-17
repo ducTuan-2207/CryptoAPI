@@ -31,6 +31,6 @@ class HomeViewModel: ObservableObject {
                 self?.allCoin = returnedCoins
             }
             .store(in: &cancellable)
-    }
+    } 
 
 }
