@@ -31,6 +31,11 @@ class HomeViewModel: ObservableObject {
                 self?.allCoin = returnedCoins
             }
             .store(in: &cancellable)
-    } 
+        $searchText
+            .sink { (returnedText) in
+                <#code#>
+            }
+    }
+    
 
 }
