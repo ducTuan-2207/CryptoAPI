@@ -26,15 +26,30 @@ class HomeViewModel: ObservableObject {
     }
     // Trong hàm addSubcribers(), cập nhật cách xử lý dữ liệu nhận được từ CoinDataService
     func addSubcribers() {
-        dataService.$allCoins
+//        dataService.$allCoins
+//            .sink { [weak self] (returnedCoins) in
+//                self?.allCoin = returnedCoins
+//            }
+//            .store(in: &cancellable)
+        //updates allCoins
+        $searchText
+            .combineLatest(dataService.$allCoins)
+            .map { (text, staringCoins ) -> [CoinModel] in
+               
+                guard !text.isEmpty else {
+                    return staringCoins
+                }
+                let lowercasedText = text.lowercased()
+                return staringCoins.filter { (coin) -> Bool in
+                    return  coin.name.lowercased().contains(lowercasedText) ||
+                            coin.symbol.lowercased().contains(lowercasedText) ||
+                            coin.id.lowercased().contains(lowercasedText)
+                }
+            }
             .sink { [weak self] (returnedCoins) in
                 self?.allCoin = returnedCoins
             }
             .store(in: &cancellable)
-        $searchText
-            .sink { (returnedText) in
-                <#code#>
-            }
     }
     
 
