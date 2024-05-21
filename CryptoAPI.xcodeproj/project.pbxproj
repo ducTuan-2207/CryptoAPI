@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		222041352BF3AF07005E613E /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222041342BF3AF07005E613E /* LocalFileManager.swift */; };
+		2225D89D2BFC9FF400ACD04C /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225D89C2BFC9FF400ACD04C /* StatisticModel.swift */; };
 		226BB9C82BF06B190072217E /* CoinImageVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226BB9C72BF06B190072217E /* CoinImageVIewModel.swift */; };
 		22729B4D2BE29EE500FEA9A9 /* CryptoAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22729B4C2BE29EE500FEA9A9 /* CryptoAPIApp.swift */; };
 		22729B4F2BE29EE500FEA9A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22729B4E2BE29EE500FEA9A9 /* ContentView.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		222041342BF3AF07005E613E /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
+		2225D89C2BFC9FF400ACD04C /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		226BB9C72BF06B190072217E /* CoinImageVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageVIewModel.swift; sourceTree = "<group>"; };
 		22729B492BE29EE500FEA9A9 /* CryptoAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22729B4C2BE29EE500FEA9A9 /* CryptoAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAPIApp.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				228F3C0D2BEAB454000E1E97 /* CoinModel.swift */,
+				2225D89C2BFC9FF400ACD04C /* StatisticModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				22AD0BD62BECD91300499005 /* HomeViewModel.swift in Sources */,
 				22729B4F2BE29EE500FEA9A9 /* ContentView.swift in Sources */,
 				222041352BF3AF07005E613E /* LocalFileManager.swift in Sources */,
+				2225D89D2BFC9FF400ACD04C /* StatisticModel.swift in Sources */,
 				2279F8922BE6977800356589 /* HomeView.swift in Sources */,
 				22C27DE02BEE2FBE00F14599 /* CoinImageView.swift in Sources */,
 				22729B4D2BE29EE500FEA9A9 /* CryptoAPIApp.swift in Sources */,
