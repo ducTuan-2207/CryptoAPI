@@ -31,6 +31,7 @@
 		22C27DE02BEE2FBE00F14599 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C27DDF2BEE2FBE00F14599 /* CoinImageView.swift */; };
 		22CB1DAC2BE93E140086647D /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CB1DAB2BE93E140086647D /* CircleButtonAnimationView.swift */; };
 		22DF96662BEFA62400439918 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF96652BEFA62400439918 /* CoinImageService.swift */; };
+		22EC26C32BFE3ED200265B58 /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EC26C22BFE3ED200265B58 /* MarketDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		22C27DDF2BEE2FBE00F14599 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		22CB1DAB2BE93E140086647D /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		22DF96652BEFA62400439918 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
+		22EC26C22BFE3ED200265B58 /* MarketDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			children = (
 				228F3C0D2BEAB454000E1E97 /* CoinModel.swift */,
 				2225D89C2BFC9FF400ACD04C /* StatisticModel.swift */,
+				22EC26C22BFE3ED200265B58 /* MarketDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				22729B4F2BE29EE500FEA9A9 /* ContentView.swift in Sources */,
 				222041352BF3AF07005E613E /* LocalFileManager.swift in Sources */,
 				2225D89D2BFC9FF400ACD04C /* StatisticModel.swift in Sources */,
+				22EC26C32BFE3ED200265B58 /* MarketDataModel.swift in Sources */,
 				2279F8922BE6977800356589 /* HomeView.swift in Sources */,
 				2225D89F2BFCA1E800ACD04C /* StatisticView.swift in Sources */,
 				22C27DE02BEE2FBE00F14599 /* CoinImageView.swift in Sources */,
