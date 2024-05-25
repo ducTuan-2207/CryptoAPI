@@ -70,6 +70,7 @@ class HomeViewModel: ObservableObject {
                     ]
                 )
                 return stats
+                //tes
             }
             .sink { [weak self] (returnedStats) in
                 self?.statistics = returnedStats
